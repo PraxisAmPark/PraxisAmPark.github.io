@@ -782,50 +782,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="stylesheets/bootstrap/js/dist/dom/data.j"></script>
-	<script src="stylesheets/bootstrap/js/dist/dom/event-handler.j"></script>
-	<script src="stylesheets/bootstrap/js/dist/dom/selector-engine.j"></script>
-	<script src="stylesheets/bootstrap/js/dist/dom/manipulator.j"></script>
-	<script src="stylesheets/bootstrap/js/dist/collapse.j"></script>
-	<script src="stylesheets/bootstrap/js/dist/carousel.j"></script>
-	<script src="stylesheets/bootstrap/js/dist/scrollspy.j"></script>
 	
-	<script src="jquery/jquery.min.j"></script>
-	
-	<script>
-	$('.closed').on('shown.bs.collapse', function(e) {//shown.bs.collapse
-
-	  var $card = $(this).closest('.card');
-	  $('html,body').animate({
-	    scrollTop: $card.offset().top - 55.2
-
-	  }, 100);
-	});
-	</script>
-
-	<script>
-		$('.navbar-nav>li>a').on('click', function(){
-    		$('.navbar-collapse').collapse('hide');
-		});
-	</script>
-
-	<script src="leaflet/leaflet.j"></script>
-	<script src="leaflet/leaflet-gesture-handling.min.j"></script>
-	<script>
-      var map = L.map("map", {
-        center: [47.4282298, 9.3814352],
-        zoom: 17,
-        gestureHandling: true
-    });
-
-    var OpenStreetMap_Transportmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-
-    //Add markers
-   var marker = new L.marker([47.4282298, 9.3814352]).addTo(map);
-
-	</script>
 </body>
 </html>
