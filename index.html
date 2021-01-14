@@ -12,8 +12,8 @@
 
 	<script>document.addEventListener("DOMContentLoaded",function(){var lazyloadImages=[].slice.call(document.querySelectorAll(".lazy > source"));if("IntersectionObserver"in window){var ImageObserver=new IntersectionObserver(function(entries,observer){entries.forEach(function(entry){if(entry.isIntersecting){var image=entry.target;image.srcset=image.dataset.srcset;image.nextElementSibling.srcset=image.dataset.srcset;image.parentElement.classList.remove("lazy");ImageObserver.unobserve(image)}})});lazyloadImages.forEach(function(lazyImage){ImageObserver.observe(lazyImage)})}else{var lazyloadThrottleTimeout;lazyloadImages=document.querySelectorAll(".lazy");function lazyload(){if(lazyloadThrottleTimeout){clearTimeout(lazyloadThrottleTimeout)}lazyloadThrottleTimeout=setTimeout(function(){var scrollTop=window.pageYOffset;lazyloadImages.forEach(function(img){if(img.offsetTop<(window.innerHeight+scrollTop)){img.src=img.dataset.src;img.classList.remove("lazy")}});if(lazyloadImages.length==0){document.removeEventListener("scroll",lazyload);window.removeEventListener("resize",lazyload);window.removeEventListener("orientationChange",lazyload)}},20)}document.addEventListener("scroll",lazyload);window.addEventListener("resize",lazyload);window.addEventListener("orientationChange",lazyload)}});</script>
 	
-	link rel="stylesheet" href="stylesheets/output.css"/>
-	<!--<<link rel="preload" href="stylesheets/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'">-->
+	<link rel="stylesheet" href="stylesheets/output.css"/>
+	<!--<link rel="preload" href="stylesheets/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'">-->
 	<!-- Leaflet -->
 	<link rel="preload" href="leaflet/leaflet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<!--<link rel="stylesheet" href="leaflet/leaflet.css"/> -->
