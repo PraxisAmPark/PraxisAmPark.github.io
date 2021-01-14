@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta name="robots" content="noindex">
+	<title>Praxis am Park</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>!function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);</script>
+
+	<link rel="stylesheet" href="stylesheets/output.css"/>
+
+	<script>document.addEventListener("DOMContentLoaded",function(){var lazyloadImages=[].slice.call(document.querySelectorAll(".lazy > source"));if("IntersectionObserver"in window){var ImageObserver=new IntersectionObserver(function(entries,observer){entries.forEach(function(entry){if(entry.isIntersecting){var image=entry.target;image.srcset=image.dataset.srcset;image.nextElementSibling.srcset=image.dataset.srcset;image.parentElement.classList.remove("lazy");ImageObserver.unobserve(image)}})});lazyloadImages.forEach(function(lazyImage){ImageObserver.observe(lazyImage)})}else{var lazyloadThrottleTimeout;lazyloadImages=document.querySelectorAll(".lazy");function lazyload(){if(lazyloadThrottleTimeout){clearTimeout(lazyloadThrottleTimeout)}lazyloadThrottleTimeout=setTimeout(function(){var scrollTop=window.pageYOffset;lazyloadImages.forEach(function(img){if(img.offsetTop<(window.innerHeight+scrollTop)){img.src=img.dataset.src;img.classList.remove("lazy")}});if(lazyloadImages.length==0){document.removeEventListener("scroll",lazyload);window.removeEventListener("resize",lazyload);window.removeEventListener("orientationChange",lazyload)}},20)}document.addEventListener("scroll",lazyload);window.addEventListener("resize",lazyload);window.addEventListener("orientationChange",lazyload)}});</script>
+	<!-- Leaflet -->
+	<link rel="stylesheet" href="leaflet/leaflet.css"/>
+	
+ 	<link rel="stylesheet" href="leaflet/leaflet-gesture-handling.min.css"/>
+	
+	<!-- Icon -->
+	<link id="favicon" rel="shortcut icon" href="images/logo/logo.png" type="image/x-icon">
+	<!-- Meta Tags -->
+	<meta name="Description" content="Put your description here.">
+	
+	<!-- Map DNS-Prefetch and preconnect-->
+	
+	<link rel="dns-prefetch" href="https://a.tile.openstreetmap.org">
+	<link rel="dns-prefetch" href="https://b.tile.openstreetmap.org">
+	<link rel="dns-prefetch" href="https://c.tile.openstreetmap.org">
+</head>
+<style>
+/* background color */
+	.navbar-custom {
+		background-color: #6E6E6E;
+	}
+	/*brand and text color */
+	.navbar-custom .navbar-brand,
+	.navbar-custom .navbar-text {
+		color: rgba(255,255,255,1);
+		padding: 0.8rem 1rem;
+	}
+	/* link color and add padding for height */
+	.navbar-custom .navbar-nav .nav-link {
+		color: rgba(255,255,255,1);
+		padding: 1rem 1rem;
+	}
+	/* color of active or hovered links */
+	.navbar-dark .navbar-nav .nav-link.active,
+	.navbar-custom .nav-item.active .nav-link,
+	.navbar-custom .nav-item:hover .nav-link {
+		color: #6E6E6E;
+		background-color: white; /*  background-color active links */
+	}
+	
+</style>
+<body id="homepage" data-bs-spy="scroll" data-bs-target=".navbar" data-offset="50">
+	
+	<nav class="navbar navbar-expand-lg navbar-dark navbar-custom p-0 fixed-top">
+		<a class="navbar-brand" href="#homepage" style="padding-left: 50px;">Praxis am Park</a>
+			<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse auto" id="navbarContent">
+				<ul class="navbar-nav d-flex ms-auto">
+					<li class="nav-item"><a class="nav-link" href="#homepage">HOME</a></li>
+					<li class="nav-item" ><a class="nav-link" href="#services" >LEISTUNGEN</a></li>
+					<li class="nav-item"><a class="nav-link" href="#team">TEAM</a></li>
+					<li class="nav-item"><a class="nav-link" href="#praxis">PRAXIS</a></li>
+					<li class="nav-item"><a class="nav-link" href="#hours">SPRECHSTUNDEN</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contact">KONTAKT</a></li>
+				</ul>
+			</div>
+	</nav>
+	
+	<div class="parallax">
+		
+		<div class="caption">
+			<h1 style="font-family: 'Georgia';padding-bottom: 5vh;margin-top: 20vh;font-weight:bold;">Praxis am Park</h1>
+			<p style="font-size: 1.4em;">Dr. med. Volker Ellensohn</p>
+			<p style="font-size: 0.9em;">Facharzt für Gynäkologie und Geburtshilfe FMH</p>
+			<p style="font-size: 0.9em; padding-bottom:20px;">Belegarzt an der Hirslanden Klinik Stephanshorn</p>
+			<p style="font-size: 1.4em; margin-top: 10px">Dr. med. Fuat Güney</p>
+			<p style="font-size: 0.9em;">Facharzt für Gynäkologie und Geburtshilfe FMH</p>
+			<p style="font-size: 1.4em">Museumstrasse 33</p>
+			<p style="font-size: 1.4em; margin-top: 10px;">Tel: 071 / 245 37 37</p>
+			
+		</div>
+		
+	</div>
+	
+	<div id="services" class="container-fluid">
+		<div>
+			<h2 class="title"><u>Leistungen</u></h2>
+		</div>
+		<div id="accordion">
+				   
+		  <div class="card">
+		    <div id="GeburtshilfeHeading">
+			<button class="section collapsed" data-bs-toggle="collapse" data-bs-target="#GeburtshilfeBody" aria-expanded="false" aria-controls="GeburtshilfeBody">
+			  Geburtshilfe</button>
+		    </div>
+
+		    <div id="GeburtshilfeBody" class="collapse closed" aria-labelledby="GeburtshilfeHeading" data-bs-parent="#accordion">
+		      <div class="panel">
+			<p>Wir schauen regelmässig bei den Schwangerschaftskontrollen, ob Mutter und Kind wohlauf sind. Mit modernster Diagnostik abgesichert möchten wir, dass Sie Ihre Schwangerschaft geniessen und sich bei uns wohl und geborgen fühlen. Als Belegarzt kann Dr. Ellensohn Sie auch während Ihrer Geburt in der Klinik Stephanshorn betreuen. Nach der Geburt sehen wir uns dann zur Geburtsnachkontrolle und besprechen die weitere Familienplanung und Verhütung.</p>
+							<p style="padding-bottom: 10px;padding-top: 10px;">Unsere Leistungen:</p>
+							<ul>
+								  <li>Impfungen und Beratung vor einer geplanten Schwangerschaft</li>
+								  <li>Betreuung in der Schwangerschaft von der 1. Schwangerschaftswoche bis zur Abschlusskontrolle 6 Wochen nach der Geburt</li>
+								  <li>Schwangerschaftsultraschalluntersuchungen:</li>
+								  <ul>
+									<li>Organscreening, Nackentransparenz, NiPT-Pränataldiagnostik, Organ-Feindiagnostik, Wachstumskontrolle</li>
+									<li>Dopplersonographie der mütterlichen und fetalen Gefässe</li>
+									<li>Cervixultraschall</li>
+									<li>3D/4D Ultraschalltechnologie mit räumlichem Bild des Babys</li>
+								  </ul>
+								  <li>Screening für Schwangerschaftsdiabetes, Schutzimpfungen gegen Keuchhusten</li>
+								  <li>Betreuung von Risikoschwangerschaften und Mehrlingen</li>
+								  <li>Abortbehandlung und Abklärungen</li>
+								  <li>Nachsorgeuntersuchung nach der Entbindung mit Besprechung der weiteren Familienplanung</li>
+							</ul>
+		      </div>
+		    </div>
+		  </div>
+					
+		  <div class="card">
+		    <div id="GynäkologieHeading">
+			<button class="section collapsed" data-bs-toggle="collapse" data-bs-target="#GynäkologieBody" aria-expanded="false" aria-controls="GynäkologieBody">
+			  Gynäkologie</button>
+		    </div>
+		    <div id="GynäkologieBody" class="collapse closed" aria-labelledby="GynäkologieHeading" data-bs-parent="#accordion">
+		      <div class="panel">
+				<p>Die Frauenheilkunde beschäftigt sich neben dem weiblichen Zyklus und der Geburtshilfe mit allen Arten von Erkrankungen, die die primären und sekundären Geschlechtsorgane einer Frau betreffen können. Wir als Frauenärzte begleiten Sie vom ersten Besuch an bis ins hohe Alter und stehen Ihnen in allen Fragen rund um Vorsorge, Verhütung, Wechseljahresbeschwerden oder Inkontinenz bis hin zu Krebserkrankungen zur Seite. Die ambulaten Eingriffe führt Dr. Ellensohn entweder in der <a href="https://www.hirslanden.ch/de/klinik-stephanshorn/home.html">Hirslanden Klinik Stephanshorn</a> oder im ambulanten Operationszetrum <a href="https://www.hirslanden.ch/de/ambulantes-operationszentrum-st-gallen/ueber-uns.html">OPERA</a> durch.</p>
+				<p style="padding-bottom: 10px;padding-top: 10px;">Unsere Leistungen:</p>
+				<ul>
+					<li>Teenagersprechstunde</li>
+					<li>Empfängnisverhütung (z.B. Mirena-Einlage oder Gynefix-Einlage)</li>
+					<li>Jahreskontrolle mit Vorsorge und Krebsfrüherkennung</li>
+					<li>HPV Testung</li>
+					<li>Kolposkopie/Dysplasie (Früherkennung bösartiger Vorstufen des Gebärmutterhalses)</li>
+					<li>Chlamydien-Screening</li>
+					<li>Abklärungen und Therapie von sexuell übertragbaren Krankheiten</li>
+					<li>Kinderwunschberatung</li>
+					<li>Ultraschalluntersuchungen der inneren Organe</li>
+					<li>Ultraschalluntersuchung der Brust (Mammasonographie)</li>
+					<li>Einleitung einer Hormonerstatztherapie</li>
+					<li>Behandlung von:</li>
+					<ul>
+							<li>Menstruationsschmerzen</li>
+							<li>Zyklusunregelmäßigkeiten</li>
+							<li>Wechseljahresbeschwerden</li>
+							<li>PMS</li>
+							<li>Endometriose</li>
+							<li>Myomen</li>
+							<li>Gynäkologischen Infektionen</li>
+							<li>Inkontinenz</li>
+					</ul>
+					<li>Ambulante und stationäre gynäkologische Operationen</li>
+				</ul>
+		      </div>
+		    </div>
+		  </div>
+					
+		  <div class="card">
+		    <div id="OnkologieHeading">
+
+			<button class="section collapsed" data-bs-toggle="collapse" data-bs-target="#OnkologieBody" aria-expanded="false" aria-controls="OnkologieBody">
+			  Onkologie</button>
+
+		    </div>
+		    <div id="OnkologieBody" class="collapse closed" aria-labelledby="OnkologieHeading" data-bs-parent="#accordion">
+		      <div class="panel">
+				<p>Die gynäkologische Onkologie ist ein Spezialgebiet der Gynäkologie, das sich mit allen Formen der Krebserkrankung der Frau beschäftigt. Zu den gynäkologischen Krebserkrankungen gehören Erkrankungen der Brust, der Vulva, der Scheide, der Eierstöcke, Eileiter und der Gebärmutter. Wir behandeln betroffene Patientinnen umfassend, einfühlsam und auf ihr spezifisches Erkrankungsbild sowie die individuelle Lebenssituation ausgerichtet. Hierfür ziehen wir neueste wissenschaftliche Erkenntnisse zu Rate und bringen diese bestmöglich in die Therapie ein. Die entsprechenden Operationen führt Dr. Ellensohn an der <a href="https://www.hirslanden.ch/de/klinik-stephanshorn/home.html">Hirslanden Klinik Stephanshorn</a> durch.</p>
+				<p style="padding-bottom: 10px;padding-top: 10px;">Unsere Leistungen:</p>
+				  <ul>
+					<li>Ultraschalluntersuchungen der Brust mit hochauflösendem Ultraschall</li>
+					<li>Ultraschalluntersuchungen der Beckenorgane</li>
+					<li>Hochgeschwindigkeitsbiopsien der Brustdrüse zur Diagnosesicherung</li>
+					<li>OP-Planung durch Zusammenarbeit mit dem Brustzentrum</li>
+					<li>Vorstellung Ihrer Erkrankung auf unserer interdisziplinären Tumorkonferenz</li>
+					<li>Nachsorge nach einer gynäkologischen Tumorerkrankung</li>
+				 </ul>
+		      </div>
+		    </div>
+		  </div>
+					
+		<div class="card">
+		    <div id="OperationenHeading">
+
+			<button class="section collapsed" data-bs-toggle="collapse" data-bs-target="#OperationenBody" aria-expanded="false" aria-controls="OperationenBody">
+			  Ambulante und stationäre Operationen</button>
+
+		    </div>
+		    <div id="OperationenBody" class="collapse closed" aria-labelledby="OperationenHeading" data-bs-parent="#accordion">
+		      <div class="panel">
+				<p>Dr. Ellensohn führt Operationen in der <a href="https://www.hirslanden.ch/de/klinik-stephanshorn/home.html">Hirslanden Klinik Stephanshorn</a> oder im ambulanten Operationszentrum <a href="https://www.hirslanden.ch/de/ambulantes-operationszentrum-st-gallen/ueber-uns.html">OPERA</a> der Hirslandengruppe durch. Die Voruntersuchungen mit der Aufklärung über den Eingriff, wie auch die Nachkontrolle, werden in der Praxis durchgeführt.</p>
+				
+		      </div>
+		    </div>
+		  </div>
+					
+		<div class="card">
+		    <div id="PsychosomatikHeading">
+
+			<button class="section collapsed" data-bs-toggle="collapse" data-bs-target="#PsychosomatikBody" aria-expanded="false" aria-controls="PsychosomatikBody">
+			  Psychosomatik</button>
+
+		    </div>
+		    <div id="PsychosomatikBody" class="collapse closed" aria-labelledby="PsychosomatikHeading" data-bs-parent="#accordion">
+		      <div class="panel">
+				<p>Eine Reihe gynäkologischer Erkrankungen und Beschwerden haben eine psychosomatische Komponente, da wir uns als fühlende und erlebende Wesen mit unseren Erfahrungen nicht von unserem Körper entkoppeln können. Es ist wichtig, diese Komponente nicht ausser Achtzu lassen, sondern in die Diagnostik und Therapie mit einzubeziehen. Das offenen Gespräch in einer vertrauensvollen Atmosphäre ist hier ein essentieller Baustein. Sollte der zeitlich begrenzte Rahmen unserer Sprechstunden in besonderen Fällen nicht ausreichen, empfehlen wir Sie gerne auch an spezialisierte Kollegen weiter.</p>
+		      </div>
+		    </div>
+		  </div>
+					
+		<div class="card">
+		    <div id="UrogynäkologieHeading">
+
+			<button class="section collapsed" data-bs-toggle="collapse" data-bs-target="#UrogynäkologieBody" aria-expanded="false" aria-controls="UrogynäkologieBody">
+			  Urogynäkologie</button>
+
+		    </div>
+		    <div id="UrogynäkologieBody" class="collapse closed" aria-labelledby="UrogynäkologieHeading" data-bs-parent="#accordion">
+		      <div class="panel">
+				<p>Manche Patientinnen sind nach der Geburt eines Kindes oder in den Wechseljahren von einer Blasenschwäche betroffen. Sie bemerken unwillkürlichen Abgang von Harn bei körperlicher Anstrengung, beim Niesen oder Lachen oder einen starken Harndrang schon bei kleinen Trinkmengen. Für viele Patientinnen ist dieses Thema unangenehm und sehr belastend. Durch eine gezielte Diagnostik und Behandlung erfahren viele Patientinnen eine Heilung oder deutliche Verbesserung der Beschwerden. Daher scheuen Sie sich nicht und sprechen Sie uns an!</p>
+				<p style="padding-bottom: 10px;padding-top: 10px;">Unsere Leistungen:</p>
+				<ul>
+					<li>Beckenbodencheck</li>
+					<li>Diagnostik von Senkungsbeschwerden und Harninkontinenz mit konservativer und/oder bei Bedarf operativer Therapie</li>
+				</ul>
+		      </div>
+		    </div>
+		  </div>
+					
+		<div class="card">
+		    <div id="VerhütungHeading">
+
+			<button class="section collapsed" data-bs-toggle="collapse" data-bs-target="#VerhütungBody" aria-expanded="false" aria-controls="VerhütungBody">
+			  Empfängnisverhütung</button>
+
+		    </div>
+		    <div id="VerhütungBody" class="collapse closed" aria-labelledby="VerhütungHeading" data-bs-parent="#accordion">
+		      <div class="panel">
+				<p>Eine umfassende Beratung über sämtliche Verhütungsmethoden steht bei uns im Vordergrund. Jede Frau ist individuell und hat verschiedene Bedürfnisse. Unser Ziel ist die optimale Verhütung für Sie, bei der Sie sich sicher und wohl fühlen.</p>
+				<p style="padding-bottom: 10px;padding-top: 10px;">Unsere Leistungen:</p>
+				<ul>
+					<li>Verhütungsberatung</li>
+					<li>Pille, Gestagenpille</li>
+					<li>Einlage Implanon</li>
+					<li>Einlage Spirale, Kupfer- und Hormonspirale (z.B. <a href="https://www.mirena.ch/de/mirena/landing.php">Mirena®</a>)</li>
+					<li><a href="https://www.gynial.ch/de/verhuetung/hormonfrei-verhueten/kupferkette/">GyneFix®–Einlage</a></li>
+					<li>3-Monatsspritze</li>
+					<li>Verhütungspflaster</li>
+					<li>Verhütungsring</li>
+					<li>Lagekontrollen Spirale</li>
+				</ul>
+		      </div>
+		    </div>
+		  </div>
+					
+		<div class="card">
+		    <div id="KinderwunschHeading">
+
+			<button class="section collapsed" data-bs-toggle="collapse" data-bs-target="#KinderwunschBody" aria-expanded="false" aria-controls="KinderwunschBody">
+			  Kinderwunschsprechstunde</button>
+
+		    </div>
+		    <div id="KinderwunschBody" class="collapse closed" aria-labelledby="KinderwunschHeading" data-bs-parent="#accordion">
+		      <div class="panel">
+				<p>Eine ungewollte Kinderlosigkeit kann für das betroffene Paar sehr belastend sein. Wir begleiten Sie in dieser schweren Zeit und führen eine stufenweise Diagnostik durch. So können wir versuchen mit dem kleinstmöglichen Aufwand eine Schwangerschaft zu erzielen.</p>
+		      </div>
+		    </div>
+		  </div>
+	
+		</div>
+					
+		
+	 </div>
+	<div id="team" class="container-fluid bg-grey">
+		<div class="title">
+			<h2><u>Team</u></h2>
+		</div>
+		
+		<div class="row team">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+			
+				<div class="row">
+					<div class="col-xl-2 col-lg-2 col-md-1 col-sm-0 col-0"></div>
+					<div class="col-xl-4 col-lg-8 col-md-4 col-sm-5 col-12">
+						<picture class="lazy">
+							<source type="image/webp" data-srcset="">
+							<source type="image/jpeg" data-srcset="images/team/Ellensohn/Ellensohn.jpg">
+					 		<img class="img-fluid w-100" width="5" height="7"
+															src="images/team/Ellensohn/Ellensohn50x70.jpg"
+															
+															alt="Dr. Volker Ellensohn" >
+						</picture>
+					</div>
+					<div class="col-xl-6 col-lg-12 col-md-7 col-sm-7 col-12">
+						<h3>Dr. med. Volker Ellensohn</h3>
+						<p style="margin-bottom: 10px;">Facharzt für Gynäkologie und Geburtshilfe FMH</p>
+						<p>Belegarzt an der Hirslandenklinik Stephanshorn</p>
+						<p><a href="Werdegang/Werdegang.html">Werdegang</a></p>
+					</div>
+					<div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-12">
+					</br>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+			
+				<div class="row">
+					<div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-0"></div>
+					<div class="col-xl-4 col-lg-8 col-md-4 col-sm-5 col-12">
+						<picture class="lazy">
+							<source type="image/webp" data-srcset="">
+							<source type="image/jpeg" data-srcset="images/team/Güney/Güney500x700.jpg">
+					 		<img class="img-fluid w-100" width="5" height="7"
+															src="images/team/Güney/Güney100x140.jpg"
+															
+															alt="Dr. Fuat Güney" >
+						</picture>
+					</div>
+					<div class="col-xl-5 col-lg-10 col-md-7 col-sm-7 col-12">
+						<h3>Dr. med. Fuat Güney</h3>
+						<p>Facharzt für Gynäkologie und Geburtshilfe FMH</p>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-0 col-sm-0 col-12">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<div class="row team" style="padding-top: 20px;">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+				<div class="row">
+					<div class="col-xl-2 col-lg-2 col-md-1 col-sm-0 col-0"></div>
+					<div class="col-xl-4 col-lg-8 col-md-4 col-sm-5 col-12">
+						<picture class="lazy">
+							<source type="image/webp" data-srcset="">
+							<source type="image/jpeg" data-srcset="images/team/Martins/Martins500x700.jpg">
+					 		<img class="img-fluid w-100" width="5" height="7"
+															src="images/team/Martins/Martins100x140.jpg"
+															
+															alt="Claudia Meier-Martins">
+						</picture>
+						
+					</div>
+					<div class="col-xl-6 col-lg-12 col-md-7 col-sm-7 col-12">
+						<h3>Claudia Martins</h3>
+						<p>MPA</p>
+					</div>
+					<div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-12">
+					</br>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+				<div class="row">
+					<div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-0"></div>
+					<div class="col-xl-4 col-lg-8 col-md-4 col-sm-5 col-12">
+						<picture class="lazy">
+							<source type="image/webp" data-srcset="">
+							<source type="image/jpeg" data-srcset="images/team/Widemann/Widemann500x700.jpg">
+					 		<img class="img-fluid w-100" width="5" height="7"
+															src="images/team/Widemann/Widemann100x140.jpg"
+															
+															alt="Jeanine Widemann">
+						</picture>
+					</div>
+					<div class="col-xl-5 col-lg-10 col-md-7 col-sm-7 col-12">
+						<h3>Jeanine Widemann</h3>
+						<p>MPA</p>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-0 col-sm-0 col-12">
+					</br>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+				<div class="row">
+					<div class="col-xl-2 col-lg-2 col-md-1 col-sm-0 col-0"></div>
+					<div class="col-xl-4 col-lg-8 col-md-4 col-sm-5 col-12">
+						<picture class="lazy">
+							<source type="image/webp" data-srcset="">
+							<source type="image/jpeg" data-srcset="images/team/Martins/Martins500x700.jpg">
+					 		<img class="img-fluid w-100" width="5" height="7"
+															src="images/team/Martins/Martins100x140.jpg"
+															
+															alt="NEU">
+						</picture>
+					</div>
+					<div class="col-xl-6 col-lg-12 col-md-7 col-sm-7 col-12">
+						<h3>Neu</h3>
+						<p>MPA</p>
+					</div>
+					<div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-12">
+					</br>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+				<div class="row">
+					<div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-0"></div>
+					<div class="col-xl-4 col-lg-8 col-md-4 col-sm-6 col-12">
+					</div>
+					<div class="col-xl-5 col-lg-10 col-md-7 col-sm-6 col-12">
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-0 col-sm-0 col-12">
+					</br>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="praxis" class="container-fluid heavy">
+		<div class="title">
+			<h2 style="margin-bottom: 15px;"><u>Praxis</u></h2>
+		</div>
+		<div class="row">
+			<div class="col-xl-3 col-lg-2 col-sm-2">
+			</div>
+			<div class="col-xl-6 col-lg-8 col-sm-8">
+			
+				<div id="Carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="width: 100%;">
+				  <ol class="carousel-indicators">
+					<li data-bs-target="#Carousel" data-bs-slide-to="0" class="active"></li>
+					<li data-bs-target="#Carousel" data-bs-slide-to="1"></li>
+					<li data-bs-target="#Carousel" data-bs-slide-to="2"></li>
+					<li data-bs-target="#Carousel" data-bs-slide-to="3"></li>
+					<li data-bs-target="#Carousel" data-bs-slide-to="4"></li>
+				  </ol>
+
+				  
+				  <div class="carousel-inner">
+					  
+					<div class="carousel-item active">
+						<picture class="lazy">
+							<source type="image/webp" data-srcset="images/praxis/Sprechzimmer/Sprechzimmer-2009.webp 2009w">
+							<source type="image/jpeg" data-srcset="images/praxis/Sprechzimmer/Sprechzimmer-690.jpg 690w, images/praxis/Sprechzimmer/Sprechzimmer-921.jpg 921w, images/praxis/Sprechzimmer/Sprechzimmer-1250.jpg 1250w, images/praxis/Sprechzimmer/Sprechzimmer-2009.jpg 2009w">
+					 		<img class="img-fluid w-100" width="4" height="3" style="width: 100%"
+															src="images/praxis/Sprechzimmer/Sprechzimmer200x150.jpg"
+															data-src="images/praxis/Sprechzimmer/Sprechzimmer-690.jpg"
+															alt="Sprechzimmer" >
+						</picture>
+						<div class="carousel-caption d-md-block">
+							<p>Sprechzimmer</p>
+						 </div> 
+					</div>
+					  
+					<div class="carousel-item">
+						<picture class="lazy">
+							<source type="image/webp" data-srcset="">
+							<source type="image/jpeg" data-srcset="images/praxis/Gang/Gang-690.jpg 690w, images/praxis/Gang/Gang-921.jpg 921w, images/praxis/Gang/Gang-1250.jpg 1250w, images/praxis/Gang/Gang-1939.jpg 1939w">
+					 		<img class="img-fluid lazy w-100" width="4" height="3" style="width: 100%"
+															src="images/praxis/Gang/Gang200x150.jpg"
+															data-src="images/praxis/Gang/Gang-690.jpg"
+															alt="Eingangsbereich" >
+						</picture>
+						<div class="carousel-caption d-md-block">
+							<p>Eingangsbereich</p>
+						 </div> 
+					</div>
+					  
+					<div class="carousel-item">
+						<picture class="lazy">
+							<source type="image/webp" data-srcset="">
+							<source type="image/jpeg" data-srcset="images/praxis/Wartezimmer/Wartezimmer-690.jpg 690w, images/praxis/Wartezimmer/Wartezimmer-921.jpg 921w, images/praxis/Wartezimmer/Wartezimmer-1250.jpg 1250w, images/praxis/Wartezimmer/Wartezimmer-2009.jpg 2009w">
+					 		<img class="img-fluid lazy w-100" width="4" height="3" style="width: 100%"
+															src="images/praxis/Wartezimmer/Wartezimmer200x150.jpg"
+															data-src="images/praxis/Wartezimmer/Wartezimmer-690.jpg"
+															alt="Wartezimmer" >
+						</picture>
+						<div class="carousel-caption d-md-block">
+							<p>Wartezimmer</p>
+						 </div> 
+					</div>
+					  
+					<div class="carousel-item">
+						<picture class="lazy">
+							<source type="image/webp" data-srcset="">
+							<source type="image/jpeg" data-srcset="images/praxis/Untersuchung/Untersuchung-690.jpg 690w, images/praxis/Untersuchung/Untersuchung-921.jpg 921w, images/praxis/Untersuchung/Untersuchung-1250.jpg 1250w, images/praxis/Untersuchung/Untersuchung-2009.jpg 2009w">
+					 		<img class="img-fluid lazy w-100" width="4" height="3" style="width: 100%"
+															src="images/praxis/Untersuchung/Untersuchung200x150.jpg"
+															data-src="images/praxis/Untersuchung/Untersuchung-690.jpg"
+															alt="Untersuchung" >
+						</picture>
+						<div class="carousel-caption d-md-block">
+							<p>Untersuchungsbereich</p>
+						 </div> 
+					</div>
+					  
+					<div class="carousel-item">
+						<picture class="lazy">
+							<source type="image/webp" data-srcset="">
+							<source type="image/jpeg" data-srcset="images/praxis/Sprechzimmer-2/Sprechzimmer%202-690.jpg 690w, images/praxis/Sprechzimmer-2/Sprechzimmer%202-921.jpg 921w, images/praxis/Sprechzimmer-2/Sprechzimmer%202-1250.jpg 1250w, images/praxis/Sprechzimmer-2/Sprechzimmer%202-2009.jpg 2009w">
+					 		<img class="img-fluid lazy w-100" width="4" height="3" style="width: 100%"
+															src="images/praxis/Sprechzimmer-2/Sprechzimmer%202200x150.jpg"
+															data-src="images/praxis/Sprechzimmer-2/Sprechzimmer%202-690.jpg"
+															alt="Sprechzimmer 2" >
+						</picture>
+						<div class="carousel-caption d-md-block">
+							<p>Sprechzimmer 2?</p>
+						 </div> 
+					</div>
+					  
+				  </div>
+					
+				  <a class="carousel-control-prev" href="#Carousel" role="button" data-bs-slide="prev"> 
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Vorheriges</span>
+				  </a>
+				  <a class="carousel-control-next" href="#Carousel" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+					<span class="visually-hidden">Nächstes</span>
+				  </a>
+
+				</div>
+				
+			</div>
+			<div class="col-xl-3 col-lg-2 col-sm-2">
+			</div>
+		</div>
+	</div>
+	
+	<div id="hours" class="container-fluid bg-grey heavy">
+		<div class="title">
+			<h2><u>Sprechstunden</u></h2>
+		</div>
+		
+		<div class="row">
+			<div class="col-xl-3 col-lg-2 col-sm-1 col-0">
+			</div>
+			<div class="col-cl-5 col-lg-6 col-sm-10 col-12">
+				<p>Termine nach Vereinbarung</p>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-sm-0 col-0">
+			</div>
+		</div>
+		
+		<div class="row line">
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-12 dark">
+				<p>Montag</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 dark">
+				<p>8.00 - 12.00 Uhr</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 dark">
+				<p>13.30 - 18.00 Uhr</p>
+			</div>
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+		</div>
+		
+		<div class="row line">
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-12 light">
+				<p>Dienstag</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 light">
+				<p>8.00 - 12.00 Uhr</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 light">
+				<p>13.30 - 18.00 Uhr</p>
+			</div>
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+		</div>
+		
+		<div class="row line">
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-12 dark">
+				<p>Mittwoch</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 dark">
+				<p>8.00 - 12.00 Uhr</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 dark">
+				<p>13.30 - 18.00 Uhr</p>
+			</div>
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+		</div>
+		
+		<div class="row line">
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-12 light">
+				<p>Donnerstag</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 light">
+				<p>8.00 - 12.00 Uhr</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 light">
+				<p>Geschlossen</p>
+			</div>
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+		</div>
+		
+		<div class="row line">
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-12 dark">
+				<p>Freitag</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 dark">
+				<p>8.00 - 12.00 Uhr</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 dark">
+				<p>13.30 - 18.00 Uhr</p>
+			</div>
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-12 light">
+				<p>Samstag</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 light">
+				<p>8.00 - 12.00 Uhr</p>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 light">
+				<p>Geschlossen</p>
+			</div>
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0 neutral">
+			</div>
+		</div>
+		
+		</br>
+		
+		<div class="row">
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0">
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+				<p>Telefon:</p>
+			</div>
+			<div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 col-9">
+				<p><a href="tel:0041712453737">071 / 245 37 37</a></p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0"></div>
+			<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3">
+				<p>Fax:</p>
+			</div>
+			<div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 col-9">
+				<p>071 / 244 11 37</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0"></div>
+			<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3" style="padding-right: 0px;">
+				<p>E-Mail:</p>
+			</div>
+			<div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 col-9">
+				<p><a href="mailto:praxis.dr.ellensohn@hin.ch">praxis.dr.ellensohn@hin.ch</a></p>
+			</div>
+		</div>
+		
+		</br>
+		
+		<div class="row">
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0">
+			</div>
+			<div class="col-xl-6 col-lg-8 col-md-10 col-sm-12 col-12">
+				<p>In Notfällen während der Praxisöffnungszeiten wenden Sie sich bitte direkt an die Praxis und kommen vorbei.</p>
+				<p>Außerhalb der Praxisöffnungszeiten erreichen Sie Dr. Ellensohn über die Hirslanden Klinik Stephanshorn (Telefon: <a href="tel:0041712827555">071 / 282 75 55</a>)</p>
+			</div>
+			<div class="col-xl-3 col-lg-2 col-md-1 col-sm-0 col-0">
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="contact" class="container-fluid heavy">
+		<div class="title">
+			<h2 style="padding-bottom:10px;"><u>Kontakt</u></h2>
+		</div>
+
+		
+		<div style="padding-top: 30px;">
+			<div class="row">
+				<div class="col-xl-1 col-lg-0 col-md-0 col-sm-0 col-0"></div>
+				<div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12">
+					
+					<div class="row">
+						<div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0"></div>
+						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+							<p>Anschrift:</p>
+						</div>
+						<div class="col-xl-8 col-lg-8 col-md-9 col-sm-9 col-9">
+							<p>Museumstrasse 33</p>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-3">
+						</div>
+						<div class="col-xl-8 col-lg-8 col-md-9 col-sm-9 col-9">
+							<p>9000 St. Gallen</p>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0"></div>
+						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+							<p>Telefon:</p>
+						</div>
+						<div class="col-xl-8 col-lg-8 col-md-9 col-sm-9 col-9">
+							<p><a href="tel:00410712453737">071 / 245 37 37</a></p>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 cols-0"></div>
+						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+							<p>Fax:</p>
+						</div>
+						<div class="col-xl-8 col-lg-8 col-md-9 col-sm-9 col-9">
+							<p>071 / 244 11 37</p>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0"></div>
+						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" style="padding-right: 0px;">
+							<p>E-Mail:</p>
+						</div>
+						<div class="col-xl-8 col-lg-8 col-md-9 col-sm-9 col-9">
+							<p><a href="mailto:praxis.dr.ellensohn@hin.ch">praxis.dr.ellensohn@hin.ch</a></p>
+						</div>
+					</div>
+					<div class="col-xl-0 col-lg-0 col-md-12 col-sm-0 col-12">
+					</br>
+					</div>
+				</div>
+				
+				<div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12" >
+					<div id="map"></div>
+				</div>
+				<div class="col-xl-1 col-lg-0 col-md-0 col-sm-0 col-0">
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="container-fluid" style="padding-top: 30px;">
+		<div class="row">
+			<div class="col-xl-1 col-lg-1 col-sm-1 col-1">
+			</div>
+			<div class="col-xl-1 col-lg-2 col-sm-2 col-5">
+				<a href="Impressum/Impressum.html">Impressum</a>
+			</div>
+			<div class="col-xl-1 col-lg-2 col-sm-2 col-5">
+				<a href="Datenschutz/Datenschutz.html">Datenschutz</a>
+			</div>
+			<div class="col-xl-9 col-lg-9 col-sm-7 col-1">
+			</div>
+		</div>
+	</div>
+	<script src="stylesheets/bootstrap/js/dist/dom/data.js"></script>
+	<script src="stylesheets/bootstrap/js/dist/dom/event-handler.js"></script>
+	<script src="stylesheets/bootstrap/js/dist/dom/selector-engine.js"></script>
+	<script src="stylesheets/bootstrap/js/dist/dom/manipulator.js"></script>
+	<script src="stylesheets/bootstrap/js/dist/collapse.js"></script>
+	<script src="stylesheets/bootstrap/js/dist/carousel.js"></script>
+	<script src="stylesheets/bootstrap/js/dist/scrollspy.js"></script>
+	
+	<script src="jquery/jquery.min.js"></script>
+	
+	<script>
+	$('.closed').on('shown.bs.collapse', function(e) {//shown.bs.collapse
+
+	  var $card = $(this).closest('.card');
+	  $('html,body').animate({
+	    scrollTop: $card.offset().top - 55.2
+
+	  }, 100);
+	});
+	</script>
+
+	<script>
+		$('.navbar-nav>li>a').on('click', function(){
+    		$('.navbar-collapse').collapse('hide');
+		});
+	</script>
+
+	<script src="leaflet/leaflet.js"></script>
+	<script src="leaflet/leaflet-gesture-handling.min.js"></script>
+	<script>
+      var map = L.map("map", {
+        center: [47.4282298, 9.3814352],
+        zoom: 17,
+        gestureHandling: true
+    });
+
+    var OpenStreetMap_Transportmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    //Add markers
+   var marker = new L.marker([47.4282298, 9.3814352]).addTo(map);
+
+	</script>
+</body>
+</html>

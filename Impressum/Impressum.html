@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta name="robots" content="noindex">
+	<title>Praxis am Park</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css">
+	<link href="../stylesheets/style.css" rel='stylesheet'>
+	<script src="../jquery/jquery.min.js" async></script>
+	<script src="../bootstrap4/js/bootstrap.min.js" async></script>
+	<link id="favicon" rel="shortcut icon" href="../images/logo/logo.png" type="image/x-icon">
+	<meta name="Description" content="Put your description here.">
+</head>
+<style>
+	#map {
+  		width: 100%;
+   		height: 410px;
+		background-color: grey;
+ 	}
+	
+	@font-face {
+		font-display: swap;
+	}
+	
+	@media only screen and (max-width: 320px) {
+		h4 {
+			font-size: 13.5px;
+		}
+		h3 {
+			font-size: 13px;
+		}
+		h2 {
+			font-size: 16px;
+		}
+		h1 {
+			font-size: 26px;
+		}
+	}
+	
+	@media only screen and (device-width: 360px) {
+		h4 {
+			font-size: 15px;
+		}
+		h3 {
+			font-size: 16px;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 29px;
+		}
+	}
+	
+	@media only screen and (device-width: 375px) {
+		h4 {
+			font-size: 17.25px;
+		}
+		h3 {
+			font-size: 18px;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 30px;
+		}
+	}
+	@media only screen and (device-width: 384px) {
+		h4 {
+			font-size: 19px;
+		}
+		h3 {
+			font-size: 25px;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: px;
+		}
+	}
+	
+	@media only screen and (device-width: 411px) {
+		h4 {
+			font-size: 18px;
+		}
+		h3 {
+			font-size: 19px;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 32px;
+		}
+	}
+	
+	@media only screen and (device-width: 414px) {
+		h4 {
+			font-size: 19px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 33px;
+		}
+	}
+	
+	@media only screen and (device-width: 425px) {
+		h4 {
+			font-size: 19px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 23px;
+		}
+		h1 {
+			font-size: 33px;
+		}
+	}
+	
+	@media only screen and (device-width: 768px) {
+		h4 {
+			font-size: 20px;
+		}
+		h3 {
+			font-size: 26px;
+		}
+		h2 {
+			font-size: 22px;
+		}
+		h1 {
+			font-size: 33px;
+		}
+	}
+	
+	@media screen and (max-width: 768px) {
+		.col-sm-4 {
+			text-align: center;
+			margin: 25px;
+		}
+	}
+	
+	@media only screen and (max-device-width: 1366px) {
+		.parallax {
+			background-attachment: scroll;
+		}
+
+	}
+	/* change the background color */
+	.navbar-custom {
+		background-color: grey;
+	}
+	/* change the brand and text color */
+	.navbar-custom .navbar-brand,
+	.navbar-custom .navbar-text {
+		color: rgba(255,255,255,.8);
+		padding: 0.8rem 1rem;
+	}
+	/* change the link color and add padding for height */
+	.navbar-custom .navbar-nav .nav-link {
+		color: rgba(255,255,255,.5);
+		padding: 1rem 1rem;
+	}
+	/* change the color of active or hovered links */
+	.navbar-dark .navbar-nav .nav-link.active,
+	.navbar-custom .nav-item.active .nav-link,
+	.navbar-custom .nav-item:hover .nav-link {
+		color: grey;
+		background-color: white; /* add background-color to active links */
+	}
+</style>
+<body>
+		<nav class="navbar navbar-expand-lg navbar-dark navbar-custom p-0 fixed-top">
+				<a class="navbar-brand" href="../index.html#homepage" style="padding-left: 50px;">Praxis am Park</a>
+				<button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="#myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="../index.html#homepage">HOME</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#services">LEISTUNGEN</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#team">TEAM</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#praxis">PRAXIS</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#hours">SPRECHSTUNDEN</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#contact">KONTAKT</a></li>
+					</ul>
+				</div>
+		</nav>
+	
+		<div class="container-fluid" style="padding-top: 30px;">
+			<div class="row">
+				<div class="col-xl-1 col-lg-1 col-sm-1 col-1">
+				</div>
+				<div class="col-xl-1 col-lg-2 col-sm-2 col-5">
+					<a href="../Impressum/Impressum.html">Impressum</a>
+				</div>
+				<div class="col-xl-1 col-lg-2 col-sm-2 col-5">
+					<a href="../Datenschutz/Datenschutz.html">Datenschutz</a>
+				</div>
+				<div class="col-xl-9 col-lg-9 col-sm-7 col-1">
+				</div>
+			</div>
+		</div>
+
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta name="robots" content="noindex">
+	<title>Praxis am Park</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css">
+	<link href="../stylesheets/style.css" rel='stylesheet'>
+	<script src="../jquery/jquery.min.js" async></script>
+	<script src="../bootstrap4/js/bootstrap.min.js" async></script>
+	<link id="favicon" rel="shortcut icon" href="../images/logo/logo.png" type="image/x-icon">
+	<meta name="Description" content="Put your description here.">
+</head>
+<style>
+	#map {
+  		width: 100%;
+   		height: 410px;
+		background-color: grey;
+ 	}
+	
+	@font-face {
+		font-display: swap;
+	}
+	
+	@media only screen and (max-width: 320px) {
+		h4 {
+			font-size: 13.5px;
+		}
+		h3 {
+			font-size: 13px;
+		}
+		h2 {
+			font-size: 16px;
+		}
+		h1 {
+			font-size: 26px;
+		}
+	}
+	
+	@media only screen and (device-width: 360px) {
+		h4 {
+			font-size: 15px;
+		}
+		h3 {
+			font-size: 16px;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 29px;
+		}
+	}
+	
+	@media only screen and (device-width: 375px) {
+		h4 {
+			font-size: 17.25px;
+		}
+		h3 {
+			font-size: 18px;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 30px;
+		}
+	}
+	@media only screen and (device-width: 384px) {
+		h4 {
+			font-size: 19px;
+		}
+		h3 {
+			font-size: 25px;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: px;
+		}
+	}
+	
+	@media only screen and (device-width: 411px) {
+		h4 {
+			font-size: 18px;
+		}
+		h3 {
+			font-size: 19px;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 32px;
+		}
+	}
+	
+	@media only screen and (device-width: 414px) {
+		h4 {
+			font-size: 19px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 33px;
+		}
+	}
+	
+	@media only screen and (device-width: 425px) {
+		h4 {
+			font-size: 19px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 23px;
+		}
+		h1 {
+			font-size: 33px;
+		}
+	}
+	
+	@media only screen and (device-width: 768px) {
+		h4 {
+			font-size: 20px;
+		}
+		h3 {
+			font-size: 26px;
+		}
+		h2 {
+			font-size: 22px;
+		}
+		h1 {
+			font-size: 33px;
+		}
+	}
+	
+	@media screen and (max-width: 768px) {
+		.col-sm-4 {
+			text-align: center;
+			margin: 25px;
+		}
+	}
+	
+	@media only screen and (max-device-width: 1366px) {
+		.parallax {
+			background-attachment: scroll;
+		}
+
+	}
+	/* change the background color */
+	.navbar-custom {
+		background-color: grey;
+	}
+	/* change the brand and text color */
+	.navbar-custom .navbar-brand,
+	.navbar-custom .navbar-text {
+		color: rgba(255,255,255,.8);
+		padding: 0.8rem 1rem;
+	}
+	/* change the link color and add padding for height */
+	.navbar-custom .navbar-nav .nav-link {
+		color: rgba(255,255,255,.5);
+		padding: 1rem 1rem;
+	}
+	/* change the color of active or hovered links */
+	.navbar-dark .navbar-nav .nav-link.active,
+	.navbar-custom .nav-item.active .nav-link,
+	.navbar-custom .nav-item:hover .nav-link {
+		color: grey;
+		background-color: white; /* add background-color to active links */
+	}
+</style>
+<body>
+		<nav class="navbar navbar-expand-lg navbar-dark navbar-custom p-0 fixed-top">
+				<a class="navbar-brand" href="../index.html#homepage" style="padding-left: 50px;">Praxis am Park</a>
+				<button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="#myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="../index.html#homepage">HOME</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#services">LEISTUNGEN</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#team">TEAM</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#praxis">PRAXIS</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#hours">SPRECHSTUNDEN</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#contact">KONTAKT</a></li>
+					</ul>
+				</div>
+		</nav>
+		
+Datenschutz
+
+Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+
+Die Nutzung unserer Website ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden gemäss dieser Datenschutzerklärung teilweise an Dritte weitergegeben.
+
+Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+Cookies
+
+Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.
+
+Die meisten der von uns verwendeten Cookies sind so genannte „Session-Cookies“. Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen.
+
+Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browser aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.
+Hosting Provider & Server-LogFiles
+
+Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log Files, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+
+    IP-Adresse
+    Browsertyp und Browserversion
+    verwendetes Betriebssystem
+    Referrer URL
+    Hostname des zugreifenden Rechners
+    Uhrzeit der Serveranfrage
+
+Diese Daten sind nicht direkt bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden.
+
+Diese Daten sowie alle Daten dieser Website werden bei unserem Hosting-Provider METANET AG, Hardstrasse 235, CH-8005 Zürich gespeichert, deren Datenschutzerklärung Sie hier finden.
+SSL-Verschlüsselung
+
+Diese Seite nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+
+Wenn die SSL Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
+Kontaktformular
+
+Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten inklusive IP-Adresse zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+Kommentarfunktion
+
+Für die Kommentarfunktion auf dieser Seite werden neben Ihrem Kommentar auch Angaben zum Zeitpunkt der Erstellung des Kommentars, Ihre E-Mail-Adresse und, wenn Sie nicht anonym posten, der von Ihnen gewählte Nutzername gespeichert.
+
+Gravatar
+
+Gravatar ist ein Dienst von Automattic Inc., dem Unternehmen hinter WordPress. Ihre IP- und E-Mail-Adresse werden an Automattic gesendet, um zu prüfen ob Sie ein Gravatar Konto besitzen und allenfalls das in Ihrem Gravatar Konto hinterlegte Profilbild neben Ihrem Kommentar auf dieser Website anzuzeigen.
+
+Die Datenschutzbestimmungen von Automattic können Sie hier einsehen.
+
+Speicherung der IP Adresse
+
+Unsere Kommentarfunktion speichert die IP-Adressen der Nutzer, die Kommentare verfassen. Da wir Kommentare auf unserer Seite nicht vor der Freischaltung prüfen, benötigen wir diese Daten, um im Falle von Rechtsverletzungen wie Beleidigungen oder Propaganda gegen den Verfasser vorgehen zu können.
+
+Abonnieren von Kommentaren
+
+Als Nutzer der Seite können Sie nach einer Anmeldung Kommentare abonnieren. Sie erhalten eine Bestätigungsemail, um zu prüfen, ob Sie der Inhaber der angegebenen E-Mail-Adresse sind. Sie können diese Funktion jederzeit über einen Link in den Info-Mails abbestellen.
+Newsletterdaten
+
+Wenn Sie den auf der Website angebotenen Newsletter beziehen möchten, benötigen wir von Ihnen eine E-Mail-Adresse sowie Informationen, welche uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind und mit dem Empfang des Newsletters einverstanden sind.
+
+Diese Daten verwenden wir ausschließlich für den Versand der angeforderten Informationen.
+
+Die erteilte Einwilligung zur Speicherung der Daten, der E-Mail-Adresse sowie deren Nutzung zum Versand des Newsletters können Sie jederzeit widerrufen, etwa über den „Austragen“-Link im Newsletter.
+
+Die Anmeldung zu unserem Newsletter erfolgt in einem sog. Double-Opt-In-Verfahren. D.h. Sie erhalten nach der Anmeldung eine E-Mail, in der Sie um die Bestätigung Ihrer Anmeldung gebeten werden. Diese Bestätigung ist notwendig, damit sich niemand mit fremden E-Mailadressen anmelden kann.
+
+Die Anmeldungen zum Newsletter werden protokolliert, um den Anmeldeprozess entsprechend den rechtlichen Anforderungen nachweisen zu können. Hierzu gehört die Speicherung des Anmelde- und des Bestätigungszeitpunkts, als auch der IP-Adresse. Ebenso werden die Änderungen Ihrer bei MailChimp gespeicherten Daten protokolliert.
+MailChimp
+
+Der Versand der Newsletter erfolgt mittels „MailChimp“, einer Newsletterversandplattform des US-Anbieters Rocket Science Group, LLC, 675 Ponce De Leon Ave NE #5000, Atlanta, GA 30308, USA.
+
+Die E-Mail-Adressen unserer Newsletterempfänger, als auch deren weitere, im Rahmen dieser Hinweise beschriebenen Daten, werden auf den Servern von MailChimp in den USA gespeichert. MailChimp verwendet diese Informationen zum Versand und zur Auswertung der Newsletter in unserem Auftrag. Des Weiteren kann MailChimp nach eigenen Informationen diese Daten zur Optimierung oder Verbesserung der eigenen Services nutzen, z.B. zur technischen Optimierung des Versandes und der Darstellung der Newsletter oder für wirtschaftliche Zwecke, um zu bestimmen aus welchen Ländern die Empfänger kommen. MailChimp nutzt die Daten unserer Newsletterempfänger jedoch nicht, um diese selbst anzuschreiben oder an Dritte weiterzugeben.
+
+Wir vertrauen auf die Zuverlässigkeit und die IT- sowie Datensicherheit von MailChimp. MailChimp ist unter dem US-EU-Datenschutzabkommen „Privacy Shield“ zertifiziert und verpflichtet sich damit die EU-Datenschutzvorgaben einzuhalten. Des Weiteren haben wir mit MailChimp ein „Data-Processing-Agreement“ abgeschlossen. Dabei handelt es sich um einen Vertrag, in dem sich MailChimp dazu verpflichtet, die Daten unserer Nutzer zu schützen, entsprechend dessen Datenschutzbestimmungen in unserem Auftrag zu verarbeiten und insbesondere nicht an Dritte weiter zu geben. Die Datenschutzbestimmungen von MailChimp können Sie hier einsehen.
+Statistische Erhebung und Analysen
+
+Die Newsletter enthalten einen sog. „web-beacon“, d.h. eine pixelgroße Datei, die beim Öffnen des Newsletters von dem Server von MailChimp abgerufen wird. Im Rahmen dieses Abrufs werden zunächst technische Informationen, wie Informationen zum Browser und Ihrem System, als auch Ihre IP-Adresse und Zeitpunkt des Abrufs erhoben. Diese Informationen werden zur technischen Verbesserung der Services anhand der technischen Daten oder der Zielgruppen und ihres Leseverhaltens anhand derer Abruforte (die mit Hilfe der IP-Adresse bestimmbar sind) oder der Zugriffszeiten genutzt.
+
+Zu den statistischen Erhebungen gehört ebenfalls die Feststellung, ob die Newsletter geöffnet werden, wann sie geöffnet werden und welche Links geklickt werden. Diese Informationen können aus technischen Gründen zwar den einzelnen Newsletterempfängern zugeordnet werden. Es ist jedoch weder unser Bestreben, noch das von MailChimp, einzelne Nutzer zu beobachten. Die Auswertungen dienen uns viel mehr dazu, die Lesegewohnheiten unserer Nutzer zu erkennen und unsere Inhalte auf sie anzupassen oder unterschiedliche Inhalte entsprechend den Interessen unserer Nutzer zu versenden.
+Kündigung/Widerruf
+
+Sie können den Empfang unseres Newsletters jederzeit kündigen, d.h. Ihre Einwilligungen widerrufen. Damit erlöschen gleichzeitig Ihre Einwilligungen in dessen Versand via MailChimp und die statistischen Analysen. Ein getrennter Widerruf des Versandes via MailChimp oder der statistischen Auswertung ist leider nicht möglich.
+
+Einen Link zur Kündigung des Newsletters finden Sie am Ende eines jeden Newsletters.
+Rechtsgrundlagen Datenschutzgrundverordnung
+
+Entsprechend den Vorgaben der ab dem 25. Mai 2018 geltenden Datenschutzgrundverordnung (DSGVO) informieren wir Sie, dass die Einwilligungen in den Versand der E-Mailadressen auf Grundlage der Art. 6 Abs. 1 lit. a, 7 DSGVO sowie § 7 Abs. 2 Nr. 3, bzw. Abs. 3 UWG erfolgt. Der Einsatz des Versanddienstleisters MailChimp, Durchführung der statistischen Erhebungen und Analysen sowie Protokollierung des Anmeldeverfahrens, erfolgen auf Grundlage unserer berechtigten Interessen gem. Art. 6 Abs. 1 lit. f DSGVO. Unser Interesse richtet sich auf den Einsatz eines nutzerfreundlichen sowie sicheren Newslettersystems, das sowohl unseren geschäftlichen Interessen dient, als auch den Erwartungen der Nutzer entspricht.
+
+Hinweis zum Newsletter nach Muster von Rechtsanwalt Dr. Thomas Schwenke
+Google Analytics
+
+Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043, USA.
+
+Google Analytics verwendet so genannte „Cookies“. Das sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.
+
+IP Anonymisierung
+
+Wir haben auf dieser Website die Funktion IP-Anonymisierung aktiviert. Dadurch wird Ihre IP-Adresse von Google innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum vor der Übermittlung in die USA gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.
+
+Browser Plugin
+
+Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch den Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: https://tools.google.com/dlpage/gaoptout?hl=de
+
+Mehr Informationen zum Umgang mit Nutzerdaten bei Google Analytics finden Sie in der Datenschutzerklärung von Google: https://support.google.com/analytics/answer/6004245?hl=de
+
+Auftragsdatenverarbeitung
+
+Wir haben mit Google einen Vertrag zur Auftragsdatenverarbeitung abgeschlossen und setzen die strengen Vorgaben der deutschen Datenschutzbehörden bei der Nutzung von Google Analytics vollständig um.
+
+Demografische Merkmale bei Google Analytics
+
+Diese Website nutzt die Funktion “demografische Merkmale” von Google Analytics. Dadurch können Berichte erstellt werden, die Aussagen zu Alter, Geschlecht und Interessen der Seitenbesucher enthalten. Diese Daten stammen aus interessenbezogener Werbung von Google sowie aus Besucherdaten von Drittanbietern. Diese Daten können keiner bestimmten Person zugeordnet werden. Sie können diese Funktion jederzeit über die Anzeigeneinstellungen in Ihrem GoogleKonto deaktivieren oder die Erfassung Ihrer Daten durch Google Analytics wie im Punkt “Widerspruch gegen Datenerfassung” dargestellt generell untersagen.
+Google Fonts
+
+Auf dieser Website werden Google Fonts genutzt. Gemäss unseres Wissens werden dabei keine persönlichen Daten durch Google gespeichert.
+
+Dazu muss aber aus technischen Gründen Ihre IP-Adresse an Google übermittelt werden, damit die Schriftarten an Ihren Browser übertragen werden können.
+
+Mehr Informationen von Google zu Google Fonts können Sie hier einsehen.
+Facebook-Plugins (Like-Button)
+
+Auf unseren Seiten sind Plugins des sozialen Netzwerks Facebook, Anbieter Facebook Inc., 1 Hacker Way, Menlo Park, California 94025, USA, integriert. Die Facebook-Plugins erkennen Sie an dem Facebook-Logo oder dem „Like-Button“ („Gefällt mir“) auf unserer Seite. Eine Übersicht über die Facebook-Plugins finden Sie hier: https://developers.facebook.com/docs/plugins/.
+
+Wenn Sie unsere Seiten besuchen, wird über das Plugin eine direkte Verbindung zwischen Ihrem Browser und dem Facebook-Server hergestellt. Facebook erhält dadurch die Information, dass Sie mit Ihrer IPAdresse unsere Seite besucht haben. Wenn Sie den Facebook „Like-Button“ anklicken während Sie in Ihrem Facebook-Account eingeloggt sind, können Sie die Inhalte unserer Seiten auf Ihrem Facebook-Profil verlinken. Dadurch kann Facebook den Besuch unserer Seiten Ihrem Benutzerkonto zuordnen. Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Facebook erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Facebook unter https://de-de.facebook.com/policy.php.
+
+Wenn Sie nicht wünschen, dass Facebook den Besuch unserer Seiten Ihrem Facebook-Nutzerkonto zuordnen kann, loggen Sie sich bitte aus Ihrem Facebook-Benutzerkonto aus.
+Twitter
+
+Auf unseren Seiten sind Funktionen des Dienstes Twitter eingebunden. Diese Funktionen werden angeboten durch die Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. Durch das Benutzen von Twitter und der Funktion „Re-Tweet“ werden die von Ihnen besuchten Websites mit Ihrem Twitter-Account verknüpft und anderen Nutzern bekannt gegeben. Dabei werden auch Daten an Twitter übertragen. Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Twitter
+erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Twitter unter https://twitter.com/privacy.
+
+Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter: https://twitter.com/account/settings ändern.
+Google+
+
+Unsere Seiten nutzen Funktionen von Google+. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043, USA.
+
+Erfassung und Weitergabe von Informationen: Mithilfe der Google+-Schaltfläche können Sie Informationen weltweit veröffentlichen. Über die Google+-Schaltfläche erhalten Sie und andere Nutzer personalisierte Inhalte von Google und unseren Partnern. Google speichert sowohl die Information, dass Sie für einen Inhalt +1 gegeben haben, als auch Informationen über die Seite, die Sie beim Klicken auf +1 angesehen haben. Ihre +1 können als Hinweise zusammen mit Ihrem Profilnamen und Ihrem Foto in Google-Diensten, wie etwa in Suchergebnissen oder in Ihrem Google-Profil, oder an anderen Stellen auf Websites und Anzeigen im Internet eingeblendet werden.
+
+Google zeichnet Informationen über Ihre +1-Aktivitäten auf, um die Google-Dienste für Sie und andere zu verbessern. Um die Google+-Schaltfläche verwenden zu können, benötigen Sie ein weltweit sichtbares, öffentliches Google-Profil, das zumindest den für das Profil gewählten Namen enthalten muss. Dieser Name wird in allen Google-Diensten verwendet. In manchen Fällen kann dieser Name auch einen anderen Namen ersetzen, den Sie beim Teilen von Inhalten über Ihr Google-Konto verwendet haben. Die Identität Ihres Google-Profils kann Nutzern angezeigt werden, die Ihre E-Mail-Adresse kennen oder über andere identifizierende Informationen von Ihnen verfügen.
+
+Verwendung der erfassten Informationen: Neben den oben erläuterten Verwendungszwecken werden die von Ihnen bereitgestellten Informationen gemäß den geltenden Google-Datenschutzbestimmungen genutzt. Google veröffentlicht möglicherweise zusammengefasste Statistiken über die +1-Aktivitäten der Nutzer bzw. gibt diese an Nutzer und Partner weiter, wie etwa Publisher, Inserenten oder verbundene Websites.
+LinkedIn
+
+Unsere Website nutzt Funktionen des Netzwerks LinkedIn. Anbieter ist die LinkedIn Corporation, 2029 Stierlin Court, Mountain View, CA 94043, USA. Bei jedem Abruf einer unserer Seiten, die Funktionen von LinkedIn enthält, wird eine Verbindung zu Servern von LinkedIn aufbaut. LinkedIn wird darüber informiert, dass Sie unsere Internetseiten mit Ihrer IP-Adresse besucht haben. Wenn Sie den „Recommend-Button“ von LinkedIn anklicken und in Ihrem Account bei LinkedIn eingeloggt sind, ist es LinkedIn möglich, Ihren Besuch auf unserer Internetseite Ihnen und Ihrem Benutzerkonto zuzuordnen. Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch LinkedIn haben.
+
+Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von LinkedIn unter: https://www.linkedin.com/legal/privacy-policy
+XING
+
+Unsere Website nutzt Funktionen des Netzwerks XING. Anbieter ist die XING AG, Dammtorstraße 29-32, 20354 Hamburg, Deutschland. Bei jedem Abruf einer unserer Seiten, die Funktionen von XING enthält, wird eine Verbindung zu Servern von XING hergestellt. Eine Speicherung von personenbezogenen Daten erfolgt dabei nach unserer Kenntnis nicht. Insbesondere werden keine IP-Adressen gespeichert oder das Nutzungsverhalten ausgewertet.
+
+Weitere Information zum Datenschutz und dem XING Share-Button finden Sie in der Datenschutzerklärung von XING unter: https://www.xing.com/app/share?op=data_protection
+YouTube
+
+Unsere Website nutzt Plugins der von Google betriebenen Seite YouTube. Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie eine unserer mit einem YouTube-Plugin ausgestatteten Seiten besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem Youtube-Server mitgeteilt, welche unserer Seiten Sie besucht haben.
+
+Wenn Sie in Ihrem YouTube-Account eingeloggt sind ermöglichen Sie YouTube, Ihr Surfverhalten direkt Ihrem persönlichen Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem YouTube-Account ausloggen.
+
+Weitere Informationen zum Umgang von Nutzerdaten finden Sie in der Datenschutzerklärung von YouTube unter: https://www.google.de/intl/de/policies/privacy
+Recht auf Auskunft, Löschung, Sperrung
+
+Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.
+
+		<div class="container-fluid" style="padding-top: 30px;">
+			<div class="row">
+				<div class="col-xl-1 col-lg-1 col-sm-1 col-1">
+				</div>
+				<div class="col-xl-1 col-lg-2 col-sm-2 col-5">
+					<a href="../Impressum/Impressum.html">Impressum</a>
+				</div>
+				<div class="col-xl-1 col-lg-2 col-sm-2 col-5">
+					<a href="../Datenschutz/Datenschutz.html">Datenschutz</a>
+				</div>
+				<div class="col-xl-9 col-lg-9 col-sm-7 col-1">
+				</div>
+			</div>
+		</div>
+</body>
+</html>
