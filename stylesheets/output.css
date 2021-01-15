@@ -1521,7 +1521,27 @@ img {
   background-color: white;
   overflow: hidden;
 }
-
+.navbar-custom {
+		background-color: #6E6E6E;
+	}
+	/*brand and text color */
+	.navbar-custom .navbar-brand,
+	.navbar-custom .navbar-text {
+		color: rgba(255,255,255,1);
+		padding: 0.8rem 1rem;
+	}
+	/* link color and add padding for height */
+	.navbar-custom .navbar-nav .nav-link {
+		color: rgba(255,255,255,1);
+		padding: 1rem 1rem;
+	}
+	/* color of active or hovered links */
+	.navbar-dark .navbar-nav .nav-link.active,
+	.navbar-custom .nav-item.active .nav-link,
+	.navbar-custom .nav-item:hover .nav-link {
+		color: #6E6E6E;
+		background-color: white; /*  background-color active links */
+	}
 .navbar-toggler {
   background: none;
   border: none;
