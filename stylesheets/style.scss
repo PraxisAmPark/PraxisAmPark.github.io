@@ -1,0 +1,757 @@
+	// Required
+	@import "bootstrap/scss/functions";
+	@import "bootstrap/scss/variables";
+	@import "bootstrap/scss/mixins";
+	@import "bootstrap/scss/utilities";
+	
+	// Optional
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/carousel";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+
+
+	body, html {
+		height: 100%;
+		margin: 0;
+		position: relative;
+	}
+	html {
+	  scroll-behavior: smooth;
+	}
+	a {
+	  color: #025FE8;
+	  text-decoration: underline;
+	}
+	p {
+	    	
+    		font-weight: 400;
+	}
+	.heavy p {
+		font-weight: 700;
+		margin-block-end: 8px;
+		margin-bottom: 8px;
+	}
+	.bg-grey {
+		background-color: #f6f6f6;
+	}
+	.parallax {
+		background-image: 
+			linear-gradient(
+			  rgba(0, 0, 0, 0.404),
+			  rgba(0, 0, 0, 0.404)
+			),
+			url("../images/background/background-original.jpg");
+
+		height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	//Portrait Jpg
+	@media 	(min-width: 320px) and (orientation: portrait){
+		.parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-320w.jpg");
+		}
+	}
+	@media (min-width: 480px) and (orientation: portrait){
+		.parallax {
+			background-image:
+				linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.404)),url("../images/background/portrait/background-480w.jpg");
+		}
+	}
+	@media (min-width:640px) and (orientation: portrait), (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+		.parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-640w.jpg");
+		}
+	}
+	@media (min-width: 768px) and (orientation: portrait), (min-width: 384px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+		.parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-768w.jpg");
+		}
+	}
+	@media (min-width: 1242px) and (orientation: portrait), (min-width: 360px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait), (min-width: 411px) and (-webkit-min-device-pixel-ratio: 2.5) and (orientation: portrait){
+		.parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-1242w.jpg");
+		}
+	}
+	@media (min-width: 1600px) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+		.parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-1600w.jpg");
+		}
+	}
+	@media (min-width: 2048px) and (orientation: portrait), (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+		.parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-2048w.jpg");
+		}
+	}
+	
+	//Portrait webp
+	@media 	(min-width: 320px) and (orientation: portrait){
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-320w.webp");
+		}
+	}
+	@media (min-width: 480px) and (orientation: portrait){
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+					rgba(0, 0, 0, 0.404),
+					rgba(0, 0, 0, 0.404)
+					),
+					url("../images/background/portrait/background-480w.webp");
+		}
+	}
+	@media (min-width:640px) and (orientation: portrait), (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-640w.webp");
+		}
+	}
+	@media (min-width: 768px) and (orientation: portrait), (min-width: 384px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-768w.webp");
+		}
+	}
+	@media (min-width: 1242px) and (orientation: portrait), (min-width: 360px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait), (min-width: 411px) and (-webkit-min-device-pixel-ratio: 2.5) and (orientation: portrait){
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-1242w.webp");
+		}
+	}
+	@media (min-width: 1600px) and (orientation: portrait), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-1600w.webp");
+		}
+	}
+	@media (min-width: 2048px) and (orientation: portrait),(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/portrait/background-2048w.webp");
+		}
+	}
+	
+	//Landscape jpg
+	@media (min-width: 854px) and (orientation: landscape), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+		.parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/landscape/background-960w.jpg");
+		}
+	}
+	@media (min-width: 1334px) and (orientation: landscape), (min-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+		.parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/landscape/background-1334w.jpg");
+		}
+	}
+	@media (min-width: 1500px) and (orientation: landscape), (min-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape), (min-width: 731px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+		.parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/landscape/background-1920w.jpg");
+		}
+	}
+	@media (min-width: 1800px) and (orientation: landscape), (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+		.parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/landscape/background-2436w.jpg");
+		}
+	}
+	@media (min-width: 2100px) and (orientation: landscape),(min-width: 823px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+		.parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/landscape/background-2881w.jpg");
+		}
+	}
+	//Landscape webp
+	@media (min-width: 854px) and (orientation: landscape), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/landscape/background-960w.webp");
+		}
+	}
+	@media (min-width: 1334px) and (orientation: landscape), (min-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/landscape/background-1334w.webp");
+		}
+	}
+	@media (min-width: 1500px) and (orientation: landscape), (min-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape), (min-width: 731px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/landscape/background-1920w.webp");
+		}
+	}
+	@media (min-width: 1800px) and (orientation: landscape), (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), (min-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/landscape/background-2436w.webp");
+		}
+	}
+	@media (min-width: 2100px) and (orientation: landscape),(min-width: 823px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+		.webp .parallax {
+			background-image:
+				linear-gradient(
+				  rgba(0, 0, 0, 0.404),
+				  rgba(0, 0, 0, 0.404)
+				),
+				url("../images/background/landscape/background-2881w.webp");
+		}
+	}
+	
+	
+	.caption {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		top: 40%;
+		width: 100%;
+		text-align: center;
+		color: white;
+	}
+	.container-fluid {
+		padding-left: 50px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
+	.container-fluid h3{
+		padding-left: 10px;
+	}
+
+	.container-fluid p{
+		padding-left: 10px;
+	}
+	
+	.container-fluid .col-sm-8 p{
+		padding-top: 0px;
+		padding-bottom:0px;
+	}
+
+	.img-fluid {
+		padding-top: 0px;
+		padding-right: 0px;
+	}
+	.title {
+		text-align: center;
+		padding-bottom: 30px;
+		padding-top: 45px;
+	}
+	.team{
+		padding-top: 40px;
+	}
+	.team img{
+		display: block;
+ 		margin-left: auto;
+  		margin-right: auto;
+	}
+
+	@font-face {
+		font-display: swap;
+	}
+	
+	@media only screen and (min-width: 320px) {
+		.heavy p {
+			font-size: 13.5px;
+		}
+		h2 {
+			font-size: 26px;
+		}
+		h3 {
+			font-size: 16px;
+		}
+		.team img {
+			width: 220px;
+			padding-bottom:10px;
+		}
+		#map {
+			position: relative;
+			height: 400px;
+			width: 100%;
+		}
+	}
+	
+	@media only screen and (min-width: 360px) {
+		.heavy p {
+			font-size: 15px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 29px;
+		}
+		.team img {
+			width: 240px;
+		}
+		#map {
+			position: relative;
+			height: 400px;
+			width: 100%;
+		}
+	}
+	
+	@media only screen and (min-width: 375px) {
+		.heavy p {
+			font-size: 17.25px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 30px;
+		}
+		.team img {
+			width: 260px;
+		}
+		#map {
+			position: relative;
+			height: 400px;
+			width: 100%;
+		}
+		
+	}
+	@media only screen and (min-width: 384px) {
+		.heavy p {
+			font-size: 17.5px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 30px;
+		}
+		.team img {
+			width: 260px;
+		}
+		#map {
+			position: relative;
+			height: 400px;
+			width: 100%;
+		}
+		
+	}
+	
+	@media only screen and (min-width: 411px) {
+		.heavy p {
+			font-size: 18px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 32px;
+		}
+		.team img {
+			width: 270px;
+		}
+		#map {
+			position: relative;
+			height: 400px;
+			width: 100%;
+		}
+		
+	}
+	
+	@media only screen and (min-width: 414px) {
+		.heavy p {
+			font-size: 19px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 33px;
+		}
+		#map {
+			position: relative;
+			height: 400px;
+			width: 100%;
+		}
+		
+	}
+	@media only screen and (min-width: 425px) {
+		.heavy p {
+			font-size: 19px;
+		}
+		h3 {
+			font-size: 23px;
+		}
+		h2 {
+			font-size: 33px;
+		}
+		#map {
+			position: relative;
+			height: 400px;
+			width: 100%;
+		}
+		
+	}
+	@media only screen and (max-width: 575px) {
+		.team h3{
+			text-align: center;
+		}
+		.team p {
+			text-align: center;
+		}
+		.container-fluid {
+			padding-left: 15px;
+		}
+		#map {
+			position: relative;
+			height: 400px;
+			width: 100%;
+		}
+		
+		
+	}
+	@media only screen and (min-width: 576px) {
+		.heavy p {
+			font-size: 18px;
+		}
+		.container-fluid {
+			padding-left: 15px;
+		}
+		.team img {
+			width: 250px;
+		}
+		#map {
+			position: relative;
+			height: 350px;
+			width: 100%;
+		}
+		
+	}
+	@media only screen and (min-width: 600px) {
+		.team img {
+			width:250px;
+		}
+		#map {
+			position: relative;
+			height: 350px;
+			width: 100%;
+		}
+	
+	}
+	@media only screen and (min-width: 768px) {
+		.heavy p {
+			font-size: 20px;
+		}
+		h3 {
+			font-size: 22px;
+		}
+		h2 {
+			font-size: 33px;
+		}
+		.team img {
+			width:250px;
+		}
+		#map {
+			position: relative;
+			height: 350px;
+			width: 100%;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		.team h3{
+			text-align: center;
+		}
+		.team p {
+			text-align: center;
+		}
+		.team img {
+			width:100%;
+		}
+		#map {
+			position: relative;
+			height: 400px;
+			width: 100%;
+		}
+		
+	}
+	@media only screen and (min-width: 1200px) {
+		.team h3{
+			text-align: left;
+		}
+		.team p {
+			text-align: left;
+		}
+		#map {
+			height: 450px;
+			width: 100%;
+		}
+		
+	}
+	@media only screen and (max-device-width: 1366px) {
+		.parallax {
+			background-attachment: scroll;
+		}
+	}
+	
+	@media only screen and (min-width: 1367px) {
+		.parallax img{
+			position: absolute;
+		}
+	}
+	@media only screen and (min-width: 1920px) {
+		
+	}
+	@media only screen and (min-width: 2160px) {
+		
+		.heavy p {
+			font-size: 40px;
+		}
+		h3 {
+			font-size: 52px;
+		}
+		h2 {
+			font-size: 66px;
+		}
+		a {
+			font-size: 32px;
+		}
+		a.navbar-brand {
+			font-size: 32px;
+		}
+		.team img {
+			width:500px;
+		}
+		.container-fluid {
+			padding-top: 80px;
+		}
+		#map {
+			height: 600px;
+			width: 100%;
+		}
+	}
+	
+	
+	.carousel-inner img {
+	  margin: auto;
+	}
+	img {
+    	aspect-ratio: attr(width) / attr(height);
+	}
+	.section {
+	  background-color: #eee;
+	  color: #444;
+	  cursor: pointer;
+	  padding: 18px;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 15px;
+	  transition: 0.4s;
+    
+	}
+
+	.section:hover {
+		  background-color: #ccc;
+		}
+	
+	.section[aria-expanded="true"]::after{
+	    content: '\2212';
+	    color: #777;
+		  font-weight: bold;
+		  float: right;
+		  margin-left: 5px;
+	 }
+	
+	.section[aria-expanded="true"] {
+	  background-color: #ccc;
+	}
+	
+	.section.collapsed::after {
+		  content: '\002B';
+		  color: #777;
+		  font-weight: bold;
+		  float: right;
+		  margin-left: 5px;
+		}
+
+	.panel {
+		  padding: 0 18px;
+		  background-color: white;
+		  overflow: hidden;
+		}
+	
+	
+	.navbar-toggler {
+	  background: none;
+	  border: none;
+	}
+
+	.navbar-toggler:active,
+	.navbar-toggler:focus {
+	  outline: 0;
+	}
+
+	.navbar-toggler .icon-bar {
+	  display: block;
+	  width: 22px;
+	  height: 2px;
+	  border-radius: 1px;
+	  margin: 4px 0 4px 0;
+	  transition: all 0.2s;
+	}
+
+	.navbar-dark .navbar-toggler .icon-bar {
+	  background: #ffffff;
+	}
+
+	.navbar-toggler .icon-bar:nth-of-type(1) {
+	  transform: rotate(45deg);
+	  transform-origin: 10% 10%;
+	}
+
+	.navbar-toggler .icon-bar:nth-of-type(2) {
+	  opacity: 0;
+	  filter: alpha(opacity=0);
+	}
+
+	.navbar-toggler .icon-bar:nth-of-type(3) {
+	  transform: rotate(-45deg);
+	  transform-origin: 10% 90%;
+	}
+
+	.navbar-toggler.collapsed .icon-bar:nth-of-type(1) {
+	  transform: rotate(0);
+	}
+
+	.navbar-toggler.collapsed .icon-bar:nth-of-type(2) {
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	}
+
+	.navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
+	  transform: rotate(0);
+	}
+	.line {
+		
+		.col-xl-2  {
+			border-bottom: 2px solid black;
+		}
+		.col-lg-3 {
+			border-bottom: 2px solid black;
+		}
+		.col-md-3 {
+			border-bottom: 2px solid black;
+		}
+		.col-md-4 {
+			border-bottom: 2px solid black;
+		 }
+		 .col-sm-4 {
+			border-bottom: 2px solid black;
+		 }
+		@media only screen and (max-width: 575px){
+			.col-12 {
+				border-bottom: none;
+			}
+		}
+	}
+	
