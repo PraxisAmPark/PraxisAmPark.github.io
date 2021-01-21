@@ -1439,23 +1439,23 @@ p {
 }
 @media only screen and (min-width: 2160px) {
   .heavy p {
-    font-size: 40px;
+    font-size: 27px;
   }
 
   h3 {
-    font-size: 52px;
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 66px;
+    font-size: 50px;
   }
 
   a {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   a.navbar-brand {
-    font-size: 32px;
+    font-size: 25px;
   }
 
   .team img {
