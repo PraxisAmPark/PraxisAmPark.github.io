@@ -1438,8 +1438,11 @@ p {
   }
 }
 @media only screen and (min-width: 2160px) {
+  p {
+	font-size: 21px;  
+  }
   .heavy p {
-    font-size: 27px;
+    font-size: 21px;
   }
 
   h3 {
@@ -1451,7 +1454,7 @@ p {
   }
 
   a {
-    font-size: 20px;
+    font-size: 21px;
   }
 
   a.navbar-brand {
