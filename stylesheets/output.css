@@ -1618,4 +1618,6 @@ img {
   }
 }
 
-/*# sourceMappingURL=output.css.map */
+.buttonseparation {
+	border-bottom: 1px solid black;
+}
