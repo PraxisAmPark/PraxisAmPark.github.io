@@ -8,7 +8,7 @@
 	<script>document.addEventListener("DOMContentLoaded",function(){var lazyloadImages=[].slice.call(document.querySelectorAll(".lazy > source"));if("IntersectionObserver"in window){var ImageObserver=new IntersectionObserver(function(entries,observer){entries.forEach(function(entry){if(entry.isIntersecting){var image=entry.target;image.srcset=image.dataset.srcset;image.nextElementSibling.srcset=image.dataset.srcset;image.parentElement.classList.remove("lazy");ImageObserver.unobserve(image)}})});lazyloadImages.forEach(function(lazyImage){ImageObserver.observe(lazyImage)})}else{var lazyloadThrottleTimeout;lazyloadImages=document.querySelectorAll(".lazy");function lazyload(){if(lazyloadThrottleTimeout){clearTimeout(lazyloadThrottleTimeout)}lazyloadThrottleTimeout=setTimeout(function(){var scrollTop=window.pageYOffset;lazyloadImages.forEach(function(img){if(img.offsetTop<(window.innerHeight+scrollTop)){img.src=img.dataset.src;img.classList.remove("lazy")}});if(lazyloadImages.length==0){document.removeEventListener("scroll",lazyload);window.removeEventListener("resize",lazyload);window.removeEventListener("orientationChange",lazyload)}},20)}document.addEventListener("scroll",lazyload);window.addEventListener("resize",lazyload);window.addEventListener("orientationChange",lazyload)}});</script>
 	<link rel="stylesheet" href="stylesheets/output.css"/>
 	<!-- Leaflet -->
-	<link rel="preload" href="leaflet/leaflet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="stylesheet" href="leaflet/leaflet.css">
 	<link rel="preload" href="leaflet/leaflet-gesture-handling.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 	<script type="application/ld+json">
@@ -64,8 +64,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" content="Willkommen auf der Webseite der Frauenarztpraxis Praxis am Park in St. Gallen.">
+	
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Praxis am Park | Frauenarzt St. Gallen">
+	<meta property="og:title" content="Frauenarzt Dr. Volker Ellensohn | Gynäkologie und Geburtshilfe">
+	
 	<meta name="format-detection" content="telephone=no">
 	<link rel="canonical" href="https://praxis-am-park.ch/">
 	
