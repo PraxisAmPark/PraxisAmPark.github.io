@@ -10,7 +10,12 @@
 	<!-- Leaflet -->
 	<link rel="stylesheet" href="leaflet/leaflet.css">
 	<link rel="preload" href="leaflet/leaflet-gesture-handling.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
+	
+	<link rel="dns-prefetch" href="https://b.tile.openstreetmap.org/17/68952/45871.png">
+	<link rel="dns-prefetch" href="https://b.tile.openstreetmap.org/17/68951/45872.png">
+	<link rel="dns-prefetch" href="https://a.tile.openstreetmap.org/17/68951/45871.png">
+	<link rel="dns-prefetch" href="https://c.tile.openstreetmap.org/17/68952/45872.png">
+	
 	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -843,23 +848,7 @@
 		});
 	</script>
 	
-	<script src="leaflet/leaflet.js"></script>
-	<script src="leaflet/leaflet-gesture-handling.min.js"></script>
-	<script>
-	  var map = L.map("map", {
-		center: [47.4282298, 9.3814352],
-		zoom: 17,
-		gestureHandling: true
-	    });
+	<script src="leaflet/map.js"></script>
 
-	    var OpenStreetMap_Transportmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		maxZoom: 19,
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-	    }).addTo(map);
-
-	    //Add markers
-	   var marker = new L.marker([47.4282298, 9.3814352]).addTo(map);
-	</script>
-	
 </body>
 </html>
