@@ -584,6 +584,7 @@ output {
   justify-content: space-between;
 }
 .navbar-brand {
+  padding-left: 50px;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
@@ -1156,7 +1157,7 @@ p {
 }
 
 .team {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .team img {
@@ -1620,4 +1621,11 @@ img {
 
 .buttonseparation {
 	border-bottom: 1px solid gray;
+}
+.listservices {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.email {
+	padding-right: 0px;
 }
