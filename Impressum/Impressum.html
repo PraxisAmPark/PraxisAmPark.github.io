@@ -15,31 +15,7 @@
 	<script>document.addEventListener("DOMContentLoaded",function(){var lazyloadImages;if("IntersectionObserver"in window){lazyloadImages=document.querySelectorAll(".lazy");var imageObserver=new IntersectionObserver(function(entries,observer){entries.forEach(function(entry){if(entry.isIntersecting){var image=entry.target;image.src=image.dataset.src;image.classList.remove("lazy");imageObserver.unobserve(image)}})});lazyloadImages.forEach(function(image){imageObserver.observe(image)})}else{var lazyloadThrottleTimeout;lazyloadImages=document.querySelectorAll(".lazy");function lazyload(){if(lazyloadThrottleTimeout){clearTimeout(lazyloadThrottleTimeout)}lazyloadThrottleTimeout=setTimeout(function(){var scrollTop=window.pageYOffset;lazyloadImages.forEach(function(img){if(img.offsetTop<(window.innerHeight+scrollTop)){img.src=img.dataset.src;img.classList.remove('lazy')}});if(lazyloadImages.length==0){document.removeEventListener("scroll",lazyload);window.removeEventListener("resize",lazyload);window.removeEventListener("orientationChange",lazyload)}},20)}document.addEventListener("scroll",lazyload);window.addEventListener("resize",lazyload);window.addEventListener("orientationChange",lazyload)}});</script>
 
 </head>
-<style>
-/* background color */
-	.navbar-custom {
-		background-color: #6E6E6E;
-	}
-	/*brand and text color */
-	.navbar-custom .navbar-brand,
-	.navbar-custom .navbar-text {
-		color: rgba(255,255,255,1);
-		padding: 0.8rem 1rem;
-	}
-	/* link color and add padding for height */
-	.navbar-custom .navbar-nav .nav-link {
-		color: rgba(255,255,255,1);
-		padding: 1rem 1rem;
-	}
-	/* color of active or hovered links */
-	.navbar-dark .navbar-nav .nav-link.active,
-	.navbar-custom .nav-item.active .nav-link,
-	.navbar-custom .nav-item:hover .nav-link {
-		color: #6E6E6E;
-		background-color: white; /*  background-color active links */
-	}
-	
-</style>
+
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark navbar-custom p-0 fixed-top">
 		<a class="navbar-brand" href="../#home">Praxis am Park</a>
@@ -84,18 +60,8 @@
 				</div>
 			</div>
 		</div>
-	<script src="../stylesheets/bootstrap/js/dist/dom/data.js"></script>
-	<script src="../stylesheets/bootstrap/js/dist/dom/event-handler.js"></script>
-	<script src="../stylesheets/bootstrap/js/dist/dom/selector-engine.js"></script>
-	<script src="../stylesheets/bootstrap/js/dist/dom/manipulator.js"></script>
-	<script src="../stylesheets/bootstrap/js/dist/collapse.js"></script>
-	<script src="../stylesheets/bootstrap/js/dist/carousel.js"></script>
-	<script src="../stylesheets/bootstrap/js/dist/scrollspy.js"></script>
+	<script src="../stylesheets/bootstrap/js/bootstrap.js"></script>
 	<script src="../jquery/jquery.min.js"></script>
-		<script>
-		$('.navbar-nav>li>a').on('click', function(){
-    		$('.navbar-collapse').collapse('hide');
-		});
-		</script>
+
 </body>
 </html>
