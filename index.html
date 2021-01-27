@@ -828,25 +828,8 @@
 	
 	
 	<script src="stylesheets/bootstrap/js/bootstrap.js"></script>
-
 	
 	<script src="jquery/jquery.min.js"></script>
-	
-	<script>
-	$('.closed').on('shown.bs.collapse', function(e) {//shown.bs.collapse
-
-	  var $card = $(this).closest('.card');
-	  $('html,body').animate({
-	    scrollTop: $card.offset().top - 55.2
-
-	  }, 100);
-	});
-	</script>
-	<script>
-		$('.navbar-nav>li>a').on('click', function(){
-    		$('.navbar-collapse').collapse('hide');
-		});
-	</script>
 	
 	<script src="leaflet/map.js"></script>
 
