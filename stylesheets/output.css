@@ -584,7 +584,7 @@ output {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-left: 50px;
+  padding-left: 50px !important; 
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
