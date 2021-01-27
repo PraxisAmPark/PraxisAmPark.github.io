@@ -1,6 +1,6 @@
 User-agent: *
 Disallow: /Datenschutz/
 Disallow: /Impressum/
-Disallow: /index.html
+Disallow: */index.html
 Crawl-delay: 120
 Sitemap: https://praxis-am-park.ch/sitemap.xml
