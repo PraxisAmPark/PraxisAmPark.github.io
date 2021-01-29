@@ -58,10 +58,14 @@
 			<image:title>Sprechzimmer</image:title>
 		</image:image>
 	</url>
-	<url><loc>https://praxis-am-park.ch/Werdegang/Werdegang.html</loc>
+	<url><loc>https://praxis-am-park.ch/Werdegang.html</loc>
 		<image:image>
 			<image:loc>https://praxis-am-park.ch/images/team/Ellensohn/Ellensohn500x700.jpg</image:loc>
 			<image:title>Dr. Volker Ellensohn</image:title>
 		</image:image>
+	</url>
+	<url><loc>https://praxis-am-park.ch/Datenschutz.html</loc>
+	</url>
+	<url><loc>https://praxis-am-park.ch/Impressum.html</loc>
 	</url>
 </urlset>
